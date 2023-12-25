@@ -25,7 +25,7 @@ namespace Dastur
                         contact.deleteContacts();
                         break;
                     case 3:
-                       // contact.searchContacts();
+                     contact.searchContacts();
                         break;
                     case 4:
                         contact.List();

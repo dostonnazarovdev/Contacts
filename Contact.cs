@@ -11,7 +11,7 @@ class Contact
     public string phone;
 
 
-
+    //Menu
     public void Menu()
     {
         System.Console.WriteLine("---- Menu ----");
@@ -30,7 +30,7 @@ class Contact
     }
 
 
-    //add contact
+    //Add contact
     public Contact addContacts()
     {
         System.Console.Write("Enter name: ");
@@ -53,7 +53,7 @@ class Contact
         return contact;
     }
 
-    // delete contact
+    // Delete contact
     public void deleteContacts()
     {
         System.Console.Write("enter phone: ");
@@ -80,13 +80,23 @@ class Contact
 
     public Contact searchContacts()
     {
-       
+        System.Console.Write("enter phone: ");
+        string phone = Console.ReadLine();
 
+        for (int i = 0; i < contactArray.Length; i++)
+        {
+            Contact contact = contactArray[i];
+            if (contact != null && contact.phone.Equals(phone))
+            {
+                Console.WriteLine("contact successfully found");
+                Console.WriteLine(contact.name + "  " + contact.surname + "  " + contact.phone + "\n");
+            }
+        }
         return null;
     }
 
 
-    // list contact
+    // List contact
     public void List()
     {
         for (int i = 0; i < contactArray.Length; i++)
