@@ -1,0 +1,14 @@
+E:\.NET\MyOwnProjects\Contact\bin\Debug\net8.0\Contact.exe
+E:\.NET\MyOwnProjects\Contact\bin\Debug\net8.0\Contact.deps.json
+E:\.NET\MyOwnProjects\Contact\bin\Debug\net8.0\Contact.runtimeconfig.json
+E:\.NET\MyOwnProjects\Contact\bin\Debug\net8.0\Contact.dll
+E:\.NET\MyOwnProjects\Contact\bin\Debug\net8.0\Contact.pdb
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.GeneratedMSBuildEditorConfig.editorconfig
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.AssemblyInfoInputs.cache
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.AssemblyInfo.cs
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.csproj.CoreCompileInputs.cache
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.dll
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\refint\Contact.dll
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.pdb
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\Contact.genruntimeconfig.cache
+E:\.NET\MyOwnProjects\Contact\obj\Debug\net8.0\ref\Contact.dll
