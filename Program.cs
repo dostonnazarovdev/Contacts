@@ -8,9 +8,9 @@ namespace Dastur
 
         static void Main()
         {
-            Contact[] contacts = new Contact[5];
             Contact contact = new Contact();
             bool b = true;
+            
 
             while (b)
             {
@@ -25,10 +25,10 @@ namespace Dastur
                         contact.deleteContacts();
                         break;
                     case 3:
-                        contact.searchContacts();
+                       // contact.searchContacts();
                         break;
                     case 4:
-                        contact.contactsLists();
+                        contact.List();
                         break;
                     case 0:
                         b = false;

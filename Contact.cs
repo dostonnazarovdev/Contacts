@@ -1,7 +1,10 @@
 using System;
+using Dastur;
 
 class Contact
 {
+    Contact[] contactArray = new Contact[5];
+    int index = 0;
 
     public string name;
     public string surname;
@@ -26,15 +29,17 @@ class Contact
         return num;
     }
 
+
+    //add contact
     public Contact addContacts()
     {
         System.Console.Write("Enter name: ");
         string name = Console.ReadLine();
 
-        System.Console.Write("Enter name: ");
+        System.Console.Write("Enter suranme: ");
         string surname = Console.ReadLine();
 
-        System.Console.Write("Enter name: ");
+        System.Console.Write("Enter phone: ");
         string phone = Console.ReadLine();
 
         Contact contact = new Contact();
@@ -43,23 +48,56 @@ class Contact
         contact.phone = phone;
 
 
+        contactArray[index++] = contact;
+        System.Console.WriteLine("contact successfully added");
         return contact;
     }
 
-    public Contact deleteContacts()
+    // delete contact
+    public void deleteContacts()
     {
+        System.Console.Write("enter phone: ");
+        string phone = Console.ReadLine();
+        int deleteIndex = 0;
+        for (int i = 0; i < contactArray.Length; i++)
+        {
+            Contact contact = contactArray[i];
+            if (contact != null && contact.phone.Equals(phone))
+            {
+                deleteIndex = i;
+            }
+        }
 
+        for (int i = deleteIndex; i < contactArray.Length - 1; i++)
+        {
+            contactArray[i] = contactArray[i + 1];
+        }
 
-        return null;
+        contactArray[contactArray.Length - 1] = null;
+        index--;
+        System.Console.WriteLine("contect successfully deleted ");
     }
 
     public Contact searchContacts()
     {
+       
+
         return null;
     }
 
-    public Contact contactsLists()
+
+    // list contact
+    public void List()
     {
-        return null;
+        for (int i = 0; i < contactArray.Length; i++)
+        {
+            Contact contact = contactArray[i];
+            if (contact != null)
+            {
+                System.Console.WriteLine("-----------  Contact List   -----------");
+                System.Console.WriteLine(contact.name + "  " + contact.surname + "  " + contact.phone + "\n");
+            }
+        }
+
     }
 }
