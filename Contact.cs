@@ -78,6 +78,7 @@ class Contact
         System.Console.WriteLine("contect successfully deleted ");
     }
 
+   // Contact Search
     public Contact searchContacts()
     {
         System.Console.Write("enter phone: ");
